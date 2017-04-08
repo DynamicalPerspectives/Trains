@@ -1,0 +1,16 @@
+
+/*Note to self: These settings aid with jumbotron image responsiveness and filling the element per http://stackoverflow.com/questions/40731694/bootstrap-3-jumbotron-background-image*/
+.jumbotron {
+    position: relative;
+    background: url("../images/train.jpg") center center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    color: #fff;
+    overflow: hidden;
+    margin-left: 10px
+}
+
+.text-center {}
+  text-color: #fff
+}
