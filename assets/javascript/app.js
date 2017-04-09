@@ -1,10 +1,11 @@
-/*
+/*DO NOT MODIFY THIS FILE. This is part of the firebaseui disti
+
  This is the firebaseui javascript file for the user authentication only.
 /*
  * FirebaseUI initialization to be used in a Single Page application context.
  */
 // FirebaseUI config.
-firebase.initializeApp(FirebaseConfig);
+firebase.initializeApp(config);
 
 var uiConfig = {
     'callbacks': {
@@ -19,10 +20,10 @@ var uiConfig = {
     'signInFlow': 'popup',
     'signInOptions': [
         // TODO(developer): Remove the providers you don't need for your app.
-        // {
-        //   provider: firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-        //   scopes: ['https://www.googleapis.com/auth/plus.login']
-        // },
+        {
+            provider: firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+            scopes: ['https://www.googleapis.com/auth/plus.login']
+        },
         // {
         //   provider: firebase.auth.FacebookAuthProvider.PROVIDER_ID,
         //   scopes :[

@@ -5,14 +5,11 @@
 <head>
     <meta charset="UTF-8">
     <title>FirebaseUI Auth "Widget" file</title>
-    <!-- JM added Phil's fonts from main html doc -->
-    <link href="https://fonts.googleapis.com/css?family=Cuprum|Permanent+Marker" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!-- TEAM: Keep these javascript files separate from other .js files since it is for user authentication only and the permissions have to be set to both "read" and "write" for users-->
+    <!-- Keep these javascript files separate from other .js files since it is for user authentication only and the permissions have to be set to both "read" and "write" for users-->
     <script src="https://www.gstatic.com/firebasejs/live/3.6/firebase.js"></script>
     <script src="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.js"></script>
-    <script src="../main/assets/config.js"></script>
+    <script src="config.js"></script>
     <!-- <script src="dist/firebaseui.js"></script> -->
 
     <!-- <link type="text/css" rel="stylesheet" href="firebaseui.css" /> -->
@@ -46,7 +43,7 @@
             },
             'signInOptions': [
                 // TODO(developer): Remove the providers you don't need for your app.
-                // firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+                firebase.auth.GoogleAuthProvider.PROVIDER_ID,
                 // firebase.auth.FacebookAuthProvider.PROVIDER_ID,
                 // firebase.auth.TwitterAuthProvider.PROVIDER_ID,
                 // firebase.auth.GithubAuthProvider.PROVIDER_ID,

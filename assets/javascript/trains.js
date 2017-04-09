@@ -1,6 +1,12 @@
+// "Trains" homework JS
 firebase.initializeApp(config);
 
 var database = firebase.database();
+
+// User sign-in button.
+$(".signUp").on("click", function() {
+    alert("Sign-in function not yet working! Ignore this for now.");
+});
 
 $("#add").on("click", function() {
     var Name = $('#Name').val().trim();

@@ -1,5 +1,7 @@
+/*"Trains" homework css*/
 
 /*Note to self: These settings aid with jumbotron image responsiveness and filling the element per http://stackoverflow.com/questions/40731694/bootstrap-3-jumbotron-background-image*/
+
 .jumbotron {
     position: relative;
     background: url("../images/train.jpg") center center;
@@ -11,6 +13,18 @@
     margin-left: 10px
 }
 
-.text-center {}
-  text-color: #fff
+/*Note to self:  See this for centering button within jumbotron http://stackoverflow.com/questions/15867730/center-button-under-form-in-bootstrap:*/
+
+.signUp {
+    margin: 0;
+    background-color: transparent;
+    text-align: center;
+}
+
+.btn {
+    background-color: royalblue;
+}
+
+.form-group {
+    color: royalblue;
 }

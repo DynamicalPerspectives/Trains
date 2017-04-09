@@ -4,16 +4,19 @@
 <head>
     <meta charset="utf-8">
     <title>Trains On Time!</title>
-    <!-- link to css -->
+    <!-- link to bootswatch stylesheet -->
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-D9XILkoivXN+bcvB2kSOowkIvIcBbNdoDQvfBNsxYAIieZbx8/SI4NeUvrRGCpDi" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 
-    <!-- link to javascript -->
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Firebase stylesheet for user athentication package -->
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.css" />
 
-    <!-- link to firebase -->
+    <!--"Trains"-specific stylesheet  -->
+    <link type="text/css" rel="stylesheet" href="style.css" />
+
+    <!-- link to firebase javascript to be put in <head> tag per firebase instructions:-->
     <script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.js"></script>
 
     <!-- link to moment js -->
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
@@ -21,11 +24,16 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="jumbotron">
-      <h1 class="text-center">Train Schedule</h1>
-      <h2 class="text-center"><em>All Aboard!</em></h2>
-    </div>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center">Train Schedule</h1>
+            <h2 class="text-center"><em>All Aboard!</em></h2>
+            <div class="signUp">
+                <button type="button" class="btn navbar-btn">Create Account or Sign in</button>
+                <!--Keep this: Same code as above with <a> to sign-in page once it's fully working-->
+                <!-- <button type="button" class="btn btn-default navbar-btn"><a href="authenticate.html">Create Account or Sign in</a</button> -->
+            </div>
+        </div>
 
         <div class="container">
             <div class="panel panel-success">
@@ -33,7 +41,7 @@
                     <h3 class="panel-title">Current Train Schedule</h3>
                 </div>
                 <div class="panel-body">
-<!--  Added ability to hover. If time, add ability to modify info-->
+                    <!--  Added ability to hover. If time, add ability to modify info-->
                     <table class="table table-hover" id="table">
                         <thead>
                             <tr>
@@ -44,9 +52,7 @@
                                 <th>Minutes Away</th>
                             </tr>
                         </thead>
-
                         <tbody>
-
                         </tbody>
                     </table>
                 </div>
@@ -56,7 +62,6 @@
                 <div class="panel-heading">
                     <h3 class="panel-title">Add Train</h3>
                 </div>
-
                 <div class="panel-body">
                     <form>
                         <div class="form-group">
@@ -82,8 +87,16 @@
         </div>
     </div>
 
+    <!-- link to javascript -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <!--link to firebase config  javascript to isolate key in .gitignore  -->
     <script src="assets/javascript/config.js"></script>
+
+    <!-- link to "Trains" homework-specific javascript -->
     <script src="assets/javascript/trains.js"></script>
+    <!-- link to javascript applicable to user-sign-in (not yet working properly, but reserving it here for now.) -->
+    <script src="assets/javascript/app.js"></script>
+
 </body>
 
 </html>
