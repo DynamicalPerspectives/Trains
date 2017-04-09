@@ -1,14 +1,5 @@
 // "Trains" homework JS
 
-var config = {
-  apiKey: "AIzaSyAMJSLGrMFCwYAJAV3UbnkZjpi3tP6v8To",
-  authDomain: "trains-21271.firebaseapp.com",
-  databaseURL: "https://trains-21271.firebaseio.com",
-  projectId: "trains-21271",
-  storageBucket: "trains-21271.appspot.com",
-  messagingSenderId: "857544260466"
-}
-
 firebase.initializeApp(config);
 
 var database = firebase.database();
@@ -38,11 +29,7 @@ $("#add").on("click", function() {
     };
 
     // Clears all of the text-boxes
-    // $("#train-name-input").val("");
-    // $("#train-des-input").val("");
-    // $("#train-start-input").val("");
-    // $("#train-freq-input").val("");
-
+    
     $('#Name').val("");
     $('#destination').val("");
     $('#First').val("");
