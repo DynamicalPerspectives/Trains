@@ -76,4 +76,4 @@ database.ref().on("child_added", function(snapshot) {
     console.log("Errors handled: " + errorObject.code)
 })
 
-// Note to self: If time, convert minutes of nextTrain to hours and minutes, if applicable. See for reference http://stackoverflow.com/questions/36035598/how-to-convert-minutes-to-hours-using-moment-js
+// Note to self: If time, convert minutes of nextTrain to hours and minutes, if applicable. See for reference https://stackoverflow.com/questions/36035598/how-to-convert-minutes-to-hours-using-moment-js
