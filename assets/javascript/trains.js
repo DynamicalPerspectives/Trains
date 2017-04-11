@@ -1,5 +1,4 @@
 // "Trains" homework JS
-
 firebase.initializeApp(config);
 
 var database = firebase.database();
