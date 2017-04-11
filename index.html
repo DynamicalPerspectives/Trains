@@ -6,19 +6,19 @@
     <title>Trains On Time!</title>
     <!-- link to bootswatch stylesheet -->
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-D9XILkoivXN+bcvB2kSOowkIvIcBbNdoDQvfBNsxYAIieZbx8/SI4NeUvrRGCpDi" crossorigin="anonymous">
-
-
-
-    <!-- Firebase stylesheet for user athentication package -->
-    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.css" />
-
     <!--"Trains"-specific stylesheet  -->
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 
-    <!-- link to firebase javascript to be put in <head> tag per firebase instructions:-->
+    <!-- link to firebase and related javascript to be put in <head> tag per firebase instructions:-->
 
-    <!-- <script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
-    <script src="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+
+    <!-- Note to self: Leave this so I can get user sign-in working later<script src="https://www.gstatic.com/firebasejs/live/3.7.5/firebase.js"></script> -->
+
+    <!-- Firebase stylesheet for user athentication package -->
+    <!-- <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.css" /> -->
 
     <!-- link to moment js -->
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
@@ -90,13 +90,12 @@
     </div>
 
     <!-- link to javascript -->
-    <script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
-<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.1.1.js"></script> -->
 
-    <!--link to firebase config  javascript to isolate key in .gitignore  -->
+    <!--link to firebase config  javascript to isolate key in .gitignore.Note that I'm not isolating it here for these "test" files. -->
+    <!-- <script src="assets/javascript/trains.js"></script> -->
     <script src="config.js"></script>
-
-    <script src = "assets/javascript/trains.js" >
+    <script src="assets/javascript/trains.js">
     </script>
     <!-- link to javascript applicable to user-sign-in (not yet working properly, but reserving it here for now.) -->
     <!-- <script src="assets/javascript/app.js"></script> -->
